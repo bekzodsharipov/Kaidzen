@@ -34,7 +34,7 @@ a {
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(12px);
-    background-color: #00000080;
+    background-color: black;
 }
 
 .header {

@@ -16,6 +16,11 @@ body {
     font-family: 'InterVariable', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 ul,
 li,
 ol,
@@ -34,7 +39,7 @@ a {
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(12px);
-    background-color: #00000080;
+    background-color: black;
 }
 
 .header {
@@ -94,7 +99,6 @@ a {
 
 /* hero style */
 
-.hero {}
 
 .hero__container {
     max-width: 1320px;
@@ -106,7 +110,6 @@ a {
     position: relative;
 }
 
-.hero__info {}
 
 .hero__info__title {
     font-weight: 700;
@@ -147,6 +150,7 @@ a {
     max-width: 300px;
     width: 100%;
     border: none;
+    color: black;
     cursor: pointer;
     font-weight: 400;
     font-size: 18.8px;
@@ -986,6 +990,7 @@ button {
     .about__images {
         max-width: 430px;
     }
+
     .partners__list {
         --scroll-duration: 10s;
     }
@@ -995,6 +1000,7 @@ button {
     .partners__list {
         --scroll-duration: 6s;
     }
+
     .header__btn {
         max-width: 160px;
         font-size: 14px;
@@ -1003,12 +1009,13 @@ button {
 
 
 @media (max-width:389px) {
-  
-    .tariff__card-button{
+
+    .tariff__card-button {
         font-size: 18px;
         padding: 18px 38px;
     }
-    .contact__submit{
+
+    .contact__submit {
         font-size: 14px;
         padding: 19px 40px;
     }

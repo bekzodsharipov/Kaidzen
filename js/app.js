@@ -23,3 +23,25 @@ document.querySelectorAll('.opinion__card').forEach(card => {
     const bgNum = card.getAttribute('data-bg'); // 1,2,3,...
     card.style.backgroundImage = `url('/images/opinions/${bgNum}.avif')`;
 });
+
+// JS to toggle dropdown
+const customSelect = document.querySelector('.custom-select');
+const trigger = customSelect.querySelector('.custom-select-trigger');
+const options = customSelect.querySelectorAll('.custom-option');
+
+trigger.addEventListener('click', () => {
+    customSelect.classList.toggle('open');
+});
+
+options.forEach(option => {
+    option.addEventListener('click', () => {
+        trigger.textContent = option.textContent;
+        customSelect.classList.remove('open');
+    });
+});
+
+document.addEventListener('click', (e) => {
+    if (!customSelect.contains(e.target)) {
+        customSelect.classList.remove('open');
+    }
+});

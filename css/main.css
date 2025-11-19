@@ -180,13 +180,26 @@ a {
     z-index: 1;
     margin-left: 60px;
 }
+.hero__box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__row-description {
+    font-family: Inter , sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 36px;
+}
 
 .hero__row__btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding: 32px 78px;
+    padding: 8px 31px;
     background-color: #0A0A0A;
     box-shadow: 0px 25px 50px -12px #00000040;
     border-radius: 10px;
@@ -1135,7 +1148,7 @@ button {
         padding: 18px 38px;
     }
 
-    
+
 
     .contact__submit {
         font-size: 14px;
